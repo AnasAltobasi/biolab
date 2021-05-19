@@ -1,15 +1,190 @@
-body {
-  text-align: unset;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.form-check .form-check-label {
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+}
+html body {
+  margin: 0px;
+  padding: 0px;
+  text-align: unset;
+  direction: ltr;
+}
+
+.tab-pane .title {
+  float: left;
+  direction: ltr;
+}
+.tab-pane .form-check {
+  float: left;
+  direction: ltr;
+  clear: both;
+}
+.tab-pane .form-check .form-check-label {
   margin-bottom: 0;
   padding-right: 20px;
   font-size: 18px;
 }
-
-.iconSize {
+.tab-pane .iconSize {
   font-size: 18px;
+}
+
+.nav-tabs {
+  padding-right: 0px;
+}
+.nav-tabs .nav-link {
+  padding: 10px;
+}
+
+.input-group-text {
+  border-radius: 0px;
+}
+
+.color {
+  margin-top: 0px;
+  margin-bottom: 0.3rem;
+  color: blue;
+  padding: 4px 7px 0px 7px;
+}
+
+.clear {
+  clear: both;
+}
+
+.content {
+  margin: auto;
+  width: 30rem;
+  padding: 10px;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  padding: 11px 45px 40px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.tab-pane {
+  width: 100%;
+}
+.tab-pane .form-control {
+  border-radius: unset;
+}
+
+.InputIndex {
+  border-radius: 15px;
+}
+.InputIndex :focus {
+  border-color: #018e9f;
+}
+
+section {
+  padding: 17px 0px;
+  overflow: hidden;
+}
+section .section-title {
+  text-align: center;
+}
+section .section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  color: #018e9f;
+  z-index: 2;
+}
+section .section-title span {
+  color: #f4f4f4;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0px;
+}
+section .section-title p {
+  margin-bottom: 0px;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin: auto;
+    width: 88%;
+    padding: 10px;
+  }
+
+  .Admin .AdminLoginStyle {
+    box-shadow: 0px 0px 30px rgba(214, 215, 216, 0.6);
+    padding: 30px;
+    width: 100% !important;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .section-title span {
+    font-size: 38px;
+  }
+}
+.Admin .AdminLoginStyle {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  width: 60%;
+}
+.Admin .AdminLoginStyle input {
+  border-radius: 15px;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 20px 15px;
+  border-color: #018e9f;
+}
+.Admin .AdminLoginStyle button[type=submit]:hover {
+  background: #018e9f;
+}
+
+form button[type=submit] {
+  background: #018e9f;
+  border: 0px;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.overlay {
+  background: #018e9f;
+}
+
+#langChanger a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+#langChanger a :hover {
+  text-decoration: underline #dedede;
+}
+
+.logo {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: unset !important;
 }
 
 @supports (zoom: 2) {

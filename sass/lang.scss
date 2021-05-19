@@ -2,37 +2,235 @@ $direction : ltr;
 $floatLeft : left;
 $floatRight : right;
 $PublicSize : 18px;
+$ZeroSize:0px;
+$MainColor: #018e9f;
 
-@if $direction == ltr {
-    $floatLeft : left;
-    $floatRight : right;
-}
-@else if  $direction == rtl{   
-    $floatLeft : right;
-    $floatRight : left;
-}
-body {
-    text-align: unset;
-    // direction: $direction;
+@if $direction==ltr {
+    $floatLeft: left;
+    $floatRight: right;
 }
 
-// .title{
-//     // float: $floatLeft;
-//     // direction: $direction;
-// }
+@else if $direction==rtl {
+    $floatLeft: right;
+    $floatRight: left;
+}
 
-.form-check {
-    // float: $floatLeft;
-    // direction: $direction;
-    // clear: both;
-    .form-check-label {
-        margin-bottom: 0;
-        padding-right: 20px;
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+
+    body {
+        margin: $ZeroSize;
+        padding: $ZeroSize;
+        text-align: unset;
+        direction: $direction;
+    }
+}
+
+.tab-pane {
+    .title {
+        float: $floatLeft;
+        direction: $direction;
+    }
+
+    .form-check {
+        float: $floatLeft;
+        direction: $direction;
+        clear: both;
+
+        .form-check-label {
+            margin-bottom: 0;
+            padding-right: 20px;
+            font-size: $PublicSize;
+        }
+    }
+
+    .iconSize {
         font-size: $PublicSize;
-    } 
+    }
+
 }
-.iconSize{ 
-    font-size: $PublicSize;
+
+.nav-tabs {
+    padding-right: $ZeroSize;
+
+    .nav-link {
+        padding: 10px;
+    }
+}
+
+
+.input-group-text {
+    border-radius: $ZeroSize;
+}
+
+.color {
+    margin-top: $ZeroSize;
+    margin-bottom: 0.3rem;
+    color: blue;
+    padding: 4px 7px $ZeroSize 7px;
+}
+
+.clear {
+    clear: both;
+}
+
+.content {
+    margin: auto;
+    width: 30rem;
+    padding: 10px;
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    padding: 30px;
+    padding: 11px 45px 40px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.tab-pane {
+    width: 100%;
+
+    .form-control {
+        border-radius: unset;
+    }
+}
+
+
+
+.InputIndex {
+    border-radius: 15px;
+
+    :focus {
+        border-color: $MainColor;
+    }
+}
+
+section {
+    padding: 17px $ZeroSize;
+    overflow: hidden;
+
+    .section-title {
+        text-align: center;
+
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            padding-bottom: $ZeroSize;
+            color: $MainColor;
+            z-index: 2;
+        }
+
+        span {
+            color: #f4f4f4;
+            z-index: 1;
+            font-weight: 700;
+            font-size: 52px;
+            text-transform: uppercase;
+            line-height: $ZeroSize;
+        }
+
+        p {
+            margin-bottom: $ZeroSize;
+            z-index: 2;
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        margin: auto;
+        width: 88%;
+        padding: 10px;
+    }
+
+    .Admin .AdminLoginStyle {
+        box-shadow: $ZeroSize $ZeroSize 30px rgb(214 215 216 / 60%);
+        padding: 30px;
+        width: 100% !important;
+    }
+
+    .section-title {
+        h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        span {
+            font-size: 38px;
+        }
+    }
+}
+
+.Admin {
+    .AdminLoginStyle {
+        box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+        padding: 30px;
+        width: 60%;
+
+        input {
+            border-radius: 15px;
+            box-shadow: none;
+            font-size: 14px;
+            padding: 20px 15px;
+            border-color: $MainColor;
+        }
+
+        button[type="submit"]:hover {
+            background: $MainColor;
+        }
+    }
+}
+
+form button[type="submit"] {
+    background: $MainColor;
+    border: $ZeroSize;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.overlay {
+    background: $MainColor;
+}
+
+#langChanger a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+
+    :hover {
+        text-decoration: underline #dedede;
+    }
+}
+
+
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: unset !important;
 }
 
 @supports (zoom:2) {
