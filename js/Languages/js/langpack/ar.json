@@ -1,0 +1,16 @@
+{
+	"token": {
+		"Patient": "المريض",
+		"WhatsApp":"WhatsApp",
+		"Full Patient Name":"الاسم الكامل للمريض",
+		"Email":"البريد الإلكتروني",
+		"Print":"طباعة",
+		"22/03/2020 02:30:04 By Ahmad Ali":"22/03/2020 02:30:04 من Ahmad Ali",
+		"Consultant":"مستشار",
+		"Referral":"الإحالة",
+		"Corporate":"شركة كبرى",
+		"Temp":"درجة حرارة",
+		"Print Section":"قسم الطباعة"
+
+	}
+}

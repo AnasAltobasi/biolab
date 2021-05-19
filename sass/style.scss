@@ -1,0 +1,15 @@
+$direction : ltr;
+$floatLeft : left;
+$floatRight : right;
+$PublicSize : 18px;
+
+@if $direction == ltr {
+    $floatLeft : left;
+    $floatRight : right;
+    
+}
+@else if  $direction == rtl{   
+    $floatLeft : right;
+    $floatRight : left;
+}
+

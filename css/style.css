@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.nav-link {
+    display: block;
+    padding: 0.1rem 0.5em;
+}
+.form-row {
+    display: -ms-flexbox;
+    display: block;
+}
+.color {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    color: blue;
+    padding: 4px 7px 0px 7px;
+}
+.content {
+    margin: auto;
+    width: max-content;
+    padding: 10px;
+}
+.tab-pane{
+    width: 100%;
+}
+.form-control{
+  border-radius: unset;
+}
+
+
