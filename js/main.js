@@ -1,3 +1,4 @@
+
 var lang = new Lang();
 lang.dynamic('en','./js/Languages/js/langpack/en.json');
   lang.dynamic('ar','./js/Languages/js/langpack/ar.json');
@@ -83,33 +84,34 @@ $(function () {
       $("#TempinputEmail").attr("disabled", "disabled");
     }
   });
+
+
   // ***********************************************************************************
+  
   const RTL = document.getElementById("AR");
   const LTR = document.getElementById("EN");
-  const Loading = document.getElementById("Loading");
-  
+
   const Body = document.getElementsByTagName("body");
   const LANG = document.getElementsByTagName("body")[0];
 
   
   $(RTL).click(function () {
-    window.lang.change('ar'); 
     $(Body).css("direction", "rtl");
     LANG.lang = "ar";
+    window.lang.change('ar'); 
     return false;
 
   });
  
   $(LTR).click(function () {
-    window.lang.change('en'); 
     $(Body).css("direction", "ltr");
     LANG.lang = "en";
+    window.lang.change('en'); 
     return false;
   });
 
-  
-
-  // $(Loading).on("click", Loading, function (e) {
+  // const Loading = document.getElementById("Loading");
+  // $(Loading).on("click", function (e) {
   //   e.preventDefault(); // cancel click
   //   var url = $($(this)).attr("href");
   //   $(Body).load(url);
@@ -118,15 +120,13 @@ $(function () {
 });
 
 
-
-
-// function load() {
-//   $.ajax({
-//     success: function () {
-//       location.reload();
-//     }
-//   });
-// }
+function load() {
+  $.ajax({
+    success: function () {
+      location.reload();
+    }
+  });
+}
 
 
 

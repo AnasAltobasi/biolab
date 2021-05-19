@@ -37,29 +37,38 @@ html {
         direction: $direction;
     }
 }
+label{
+    display: flex;
+}
 
-.tab-pane {
-    .title {
-        float: $floatLeft;
-        direction: $direction;
-    }
+// .tab-pane {
+//     .title {
+//         float: $floatLeft;
+//         direction: $direction;
+//     }
 
-    .form-check {
-        float: $floatLeft;
-        direction: $direction;
-        clear: both;
+    // .form-check {
+    //     float: $floatLeft;
+    //     direction: $direction;
+    //     clear: both;
 
         .form-check-label {
             margin-bottom: 0;
             padding-right: 20px;
             font-size: $PublicSize;
         }
-    }
+    // }
 
     .iconSize {
         font-size: $PublicSize;
     }
 
+// }
+
+.form-group {
+    .LabelInput {
+        display: flex;
+    }
 }
 
 .nav-tabs {
@@ -69,7 +78,6 @@ html {
         padding: 10px;
     }
 }
-
 
 .input-group-text {
     border-radius: $ZeroSize;

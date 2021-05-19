@@ -5,29 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task1</title>
+    <title>Home</title>
     <!-- BOOTSTRAP CSS FILE -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- MAIN CSS FILE -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- FONTAWESOME CSS ICONS FILE-->
     <link rel="stylesheet" href="css/fontawesome.css" />
-   <!-- MINE  CSS & SASS  FILE-->
-   <link rel="stylesheet" href="./sass/style.css" />
+    <!-- MINE  CSS & SASS  FILE-->
+    <link rel="stylesheet" href="./sass/style.css" />
 </head>
 
-<body>
+<body dir="ltr">
     <div class="header">
         <div class="overlay">
             <div class="container table">
                 <div class="navbar">
-                    <a href="index.html" lang="en" ><span class="logo">Bio Lab&nbsp;<span class="main-color">Task</span></span></a>
+                    <a href="index.html" lang="en"><span class="logo">Bio Lab&nbsp;<span
+                                class="main-color">Task</span></span></a>
                     <span class="links">
                         <div class="align-items-center mb-2">
                             <div id="langChanger">
-                                <a href="Login.html" lang="en" id="Loading">Login</a>&nbsp;|
-                                <a href="" id="EN">EN</a>&nbsp; |
-                                <a href="" id="AR">AR</a>
+                                <a href="Login.html" lang="en" id="Loading" >Login</a>&nbsp;|
+                                <a href="" id="EN" >EN</a>&nbsp; |
+                                <a href="" id="AR" >AR</a>
                             </div>
                         </div>
                     </span>
@@ -36,192 +37,190 @@
         </div>
     </div>
     <div class="container content">
-            <form>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-user"></i></div>
+        <form>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-user"></i></div>
+                </div>
+                <input disabled type="text" lang="en" class="form-control" id="PatientName" value="Full Patient Name">
+            </div>
+            <div class="align-items-center">
+                <ul class="nav nav-tabs mb-2" role="tablist">
+                    <!-- FIRST NAV LINK -->
+                    <li class="nav-item Item1">
+                        <a class="nav-link active text-center" data-toggle="tab" href="#tab1" role="tab">
+                            <p class="color" lang="en">WhatsApp</p>
+                        </a>
+                    </li>
+                    <!-- SECOND NAV LINK -->
+                    <li class="nav-item Item2">
+                        <a class="nav-link text-center" data-toggle="tab" href="#tab2" role="tab">
+                            <p class="color" lang="en">Email</p>
+                        </a>
+                    </li>
+                    <!-- THIRD NAV LINK -->
+                    <li class="nav-item Item3">
+                        <a class="nav-link text-center" data-toggle="tab" href="#tab3" role="tab">
+                            <p class="color" lang="en">Print</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes-->
+                <div class="tab-content">
+                    <!-- CONTENT (BODY) FOR FIRST Tab  -->
+                    <div class="tab-pane active" id="tab1" role="tabpanel">
+                        <div class="form-check">
+                            <input class="form-check-input "type="checkbox" value="" id="PatientChackWhatsapp">
+                            <label class="form-check-label fontSize" for="flexCheckDefault" lang="en">
+                                Patient
+                            </label>
                         </div>
-                        <input disabled type="text" lang="en" class="form-control" id="PatientName" value="Full Patient Name">
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control InputIndex" id="PatientInputWhatsapp">
+                        </div>
+                        <div class="d-block mt-2 title">
+                            <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
+                            <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input " type="checkbox" value="" id="ConsultantChackWhatsapp">
+                            <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
+                                Consultant
+                            </label>
+                        </div>
+                        <div class=" input-group mb-2">
+                            <input type="text" class="form-control InputIndex" id="ConsultantInputWhatsapp">
+                        </div>
+                        <div class="d-block mt-2 title">
+                            <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
+                            <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ReferralChackWhatsapp">
+                            <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
+                                Referral
+                            </label>
+                        </div>
+                        <div class=" input-group mb-2">
+                            <input type="text" class="form-control InputIndex" id="ReferralInputWhatsapp">
+                        </div>
+                        <div class="d-block mt-2 title">
+                            <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
+                            <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="CorporateChackWhatsapp">
+                            <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
+                                Corporate
+                            </label>
+                        </div>
+                        <div class=" input-group mb-2">
+                            <input type="text" class="form-control InputIndex" id="CorporateInputWhatsapp">
+
+                        </div>
+                        <div class="d-block mt-2 title">
+                            <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
+                            <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
+                        </div>
                     </div>
-                <div class="align-items-center">
-                    <ul class="nav nav-tabs mb-2" role="tablist">
-                        <!-- FIRST NAV LINK -->
-                        <li class="nav-item Item1">
-                            <a class="nav-link active text-center" data-toggle="tab" href="#tab1" role="tab">
-                                <p class="color" lang="en">WhatsApp</p>
-                            </a>
-                        </li>
-                        <!-- SECOND NAV LINK -->
-                        <li class="nav-item Item2">
-                            <a class="nav-link text-center" data-toggle="tab" href="#tab2" role="tab">
-                                <p class="color" lang="en">Email</p>
-                            </a>
-                        </li>
-                        <!-- THIRD NAV LINK -->
-                        <li class="nav-item Item3">
-                            <a class="nav-link text-center" data-toggle="tab" href="#tab3" role="tab">
-                                <p class="color" lang="en">Print</p>
-                            </a>
-                        </li>
-                    </ul>
 
-                    <!-- Tab panes-->
-                    <div class="tab-content">
-                        <!-- CONTENT (BODY) FOR FIRST Tab  -->
-                        <div class="tab-pane  active" id="tab1" role="tabpanel">
-                            <div class="form-check">
-                                <input class="form-check-input " type="checkbox" value="" id="PatientChackWhatsapp">
-                                <label class="form-check-label fontSize" for="flexCheckDefault" lang="en">
-                                    Patient
-                                </label>
-                            </div>
-                            <div class="input-group mb-2">
-                                <input type="text" class="form-control InputIndex" id="PatientInputWhatsapp">
-                            </div>
-                            <div class="d-block mt-2 title">
-                                <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
-                                <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input " type="checkbox" value="" id="ConsultantChackWhatsapp">
-                                <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
-                                    Consultant
-                                </label>
-                            </div>
-                            <div class=" input-group mb-2">
-                                <input type="text" class="form-control InputIndex" id="ConsultantInputWhatsapp">
-                            </div>
-                            <div class="d-block mt-2 title">
-                                <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
-                                <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="ReferralChackWhatsapp">
-                                <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
-                                    Referral
-                                </label>
-                            </div>
-                            <div class=" input-group mb-2">
-                                <input type="text" class="form-control InputIndex" id="ReferralInputWhatsapp">
-                            </div>
-                            <div class="d-block mt-2 title">
-                                <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
-                                <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="CorporateChackWhatsapp">
-                                <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
-                                    Corporate
-                                </label>
-                            </div>
-                            <div class=" input-group mb-2">
-                                <input type="text" class="form-control InputIndex" id="CorporateInputWhatsapp">
-
-                            </div>
-                            <div class="d-block mt-2 title">
-                                <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
-                                <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
-                            </div>
+                    <!-- CONTENT (BODY) FOR second Tab  -->
+                    <div class="tab-pane" id="tab2" role="tabpanel">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="PatientChackEmail">
+                            <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
+                                Patient
+                            </label>
                         </div>
-
-                        <!-- CONTENT (BODY) FOR second Tab  -->
-                        <div class="tab-pane " id="tab2" role="tabpanel">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="PatientChackEmail">
-                                <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
-                                    Patient
-                                </label>
-                            </div>
-                            <div class=" input-group mb-2">
-                                <input type="text" class="form-control InputIndex" id="PatientInputEmail" placeholder="">
-
-                            </div>
-                            <div class="d-block mt-2 title">
-                                <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
-                                <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="ConsultantChackEmail">
-                                <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
-                                    Consultant
-                                </label>
-                            </div>
-                            <div class=" input-group mb-2">
-                                <input type="text" class="form-control InputIndex" id="ConsultantInputEmail"
-                                    placeholder="">
-
-                            </div>
-                            <div class="d-block mt-2 title">
-                                <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
-                                <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="ReferralChackEmail">
-                                <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
-                                    Referral
-                                </label>
-                            </div>
-                            <div class=" input-group mb-2">
-                                <input type="text" class="form-control InputIndex" id="ReferralInputEmail" placeholder="">
-                            </div>
-                            <div class="d-block mt-2 title">
-                                <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
-                                <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="CorporateChackEmail">
-                                <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
-                                    Corporate
-                                </label>
-                            </div>
-                            <div class=" input-group mb-2">
-                                <input type="text" class="form-control InputIndex" id="CorporateInputEmail" placeholder="">
-                            </div>
-                            <div class="d-block mt-2 title">
-                                <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
-                                <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="TempInputEmail"
-                                    id="TempChackEmail">
-                                <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
-                                    Temp
-                                </label>
-                            </div>
-                            <div class=" input-group mb-2">
-                                <input type="text" class="form-control InputIndex" id="TempinputEmail" placeholder="">
-                            </div>
-                            <div class="d-block mt-2 title">
-                                <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
-                                <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
-                            </div>
-                        </div>
-                        <!-- CONTENT (BODY) FOR Last Tab  -->
-                        <div class="tab-pane" id="tab3" role="tabpanel">
-                            <p lang="en">Print Section</p>
+                        <div class=" input-group mb-2">
+                            <input type="text" class="form-control InputIndex" id="PatientInputEmail" placeholder="">
 
                         </div>
+                        <div class="d-block mt-2 title">
+                            <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
+                            <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ConsultantChackEmail">
+                            <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
+                                Consultant
+                            </label>
+                        </div>
+                        <div class=" input-group mb-2">
+                            <input type="text" class="form-control InputIndex" id="ConsultantInputEmail" placeholder="">
+
+                        </div>
+                        <div class="d-block mt-2 title">
+                            <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
+                            <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ReferralChackEmail">
+                            <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
+                                Referral
+                            </label>
+                        </div>
+                        <div class=" input-group mb-2">
+                            <input type="text" class="form-control InputIndex" id="ReferralInputEmail" placeholder="">
+                        </div>
+                        <div class="d-block mt-2 title">
+                            <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
+                            <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="CorporateChackEmail">
+                            <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
+                                Corporate
+                            </label>
+                        </div>
+                        <div class=" input-group mb-2">
+                            <input type="text" class="form-control InputIndex" id="CorporateInputEmail" placeholder="">
+                        </div>
+                        <div class="d-block mt-2 title">
+                            <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
+                            <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="TempInputEmail" id="TempChackEmail">
+                            <label lang="en" class="form-check-label fontSize" for="flexCheckDefault">
+                                Temp
+                            </label>
+                        </div>
+                        <div class=" input-group mb-2">
+                            <input type="text" class="form-control InputIndex" id="TempinputEmail" placeholder="">
+                        </div>
+                        <div class="d-block mt-2 title">
+                            <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
+                            <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
+                        </div>
+                    </div>
+                    <!-- CONTENT (BODY) FOR Last Tab  -->
+                    <div class="tab-pane" id="tab3" role="tabpanel">
+                        <p lang="en">Print Section</p>
+
                     </div>
                 </div>
-            </form>
-        </div>
+            </div>
+        </form>
+    </div>
 
-        <!-- JQuery FILE Calling -->
-        <script src="./js/jquery.js"></script>
-        <!-- FONTAWESOME  ICONS JS FILE Calling-->
-        <script src="js/fontawesome.js"></script>
-        <!-- BUNDLE BOOTSTRAP JS FILE Calling-->
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <!-- BOOTSTRAP JS FILE Calling-->
-        <script src="./js/bootstrap.min.js"></script>
-        <script src="./js/Languages/js/js.cookie.js" charset="utf-8" type="text/javascript"></script>
-        <script src="./js/Languages/js/jquery-lang.js"></script>
-        <!-- MAIN JS FILE Calling-->
-        <script src="js/main.js"></script>
+    <!-- JQuery FILE Calling -->
+    <script src="./js/jquery.js"></script>
+    <!-- FONTAWESOME  ICONS JS FILE Calling-->
+    <script src="js/fontawesome.js"></script>
+    <!-- BUNDLE BOOTSTRAP JS FILE Calling-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- BOOTSTRAP JS FILE Calling-->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/Languages/js/js.cookie.js" charset="utf-8" type="text/javascript"></script>
+    <script src="./js/Languages/js/jquery-lang.js"></script>
+    <!-- MAIN JS FILE Calling-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
