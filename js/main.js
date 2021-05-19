@@ -1,4 +1,14 @@
+var lang = new Lang();
+
+lang.dynamic('en', './js/Languages/js/langpack/en.json');
+lang.dynamic('ar', './js/Languages/js/langpack/ar.json');
+
+
 $(function () {
+  
+lang.init({
+  defaultLang: 'en'
+});
   // Mack All Input Disable
   const AllInput = $(":text");
   const AllCheckBox = $(":checkbox");
@@ -79,41 +89,39 @@ $(function () {
   const RTL = document.getElementById("AR");
   const LTR = document.getElementById("EN");
   const Loading =document.getElementById("Loading");
+
   const Body = document.getElementsByTagName("body");
   const LANG = document.getElementsByTagName("body")[0];
 
   $(RTL).click(function () {
     $(Body).css("direction", "rtl");
     LANG.lang = "ar";
-    $("#PatientName").attr("value","إسم المريض الكامل");
-    window.lang.change('ar');
-    return false;
+    window.lang.change('ar');return false;
     
   });
 
   $(LTR).click(function () {
     $(Body).css("direction", "ltr");
     LANG.lang = "en";
-    $("#PatientName").attr("value","Full Patient Name");
-    window.lang.change('en');
-    return false;
+    window.lang.change('en');return false;
   });
+
 
 
   $(Loading).on("click",Loading,function(e){ 
     e.preventDefault(); // cancel click
-    var url=$((this)).attr("href");
+    var url=$(Loading).attr("href");
     $(Body).load(url);
     
   });
+
+  
+
+
 });
 
-var lang = new Lang();
-lang.dynamic('en', './js/Languages/js/langpack/en.json');
-lang.dynamic('ar', './js/Languages/js/langpack/ar.json');
-lang.init({
-  defaultLang: 'en'
-});
+
+
 
 function load(){
   $.ajax({

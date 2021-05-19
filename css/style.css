@@ -16,29 +16,42 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.nav-link {
+  display: block;
+  padding: 0.1rem 0.5em;
+}
+
 .nav-tabs {
-    padding-right: 0;
+  padding-right: 0px;
 }
+
+.input-group-text {
+  border-radius: 0px;
+}
+
 .form-row {
-    display: -ms-flexbox;
-    display: block;
+  display: -ms-flexbox;
+  display: block;
 }
+
 .color {
-    margin-top: 0;
-    margin-bottom: 0.3rem;
-    color: blue;
-    padding: 4px 7px 0px 7px;
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+  color: blue;
+  padding: 4px 7px 0px 7px;
 }
+
 .content {
-    margin: auto;
-    width: max-content;
-    padding: 10px;
+  margin: auto;
+  width: max-content;
+  padding: 10px;
 }
-.tab-pane{
-    width: 100%;
+
+.tab-pane {
+  width: 100%;
 }
-.form-control{
+
+.form-control {
   border-radius: unset;
 }
-
-
