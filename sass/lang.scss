@@ -1,18 +1,37 @@
-@import "style.scss";
+$direction : ltr;
+$floatLeft : left;
+$floatRight : right;
+$PublicSize : 18px;
 
+@if $direction == ltr {
+    $floatLeft : left;
+    $floatRight : right;
+}
+@else if  $direction == rtl{   
+    $floatLeft : right;
+    $floatRight : left;
+}
 body {
     text-align: unset;
-    direction: $direction; 
+    // direction: $direction;
 }
 
+// .title{
+//     // float: $floatLeft;
+//     // direction: $direction;
+// }
+
 .form-check {
+    // float: $floatLeft;
+    // direction: $direction;
+    // clear: both;
     .form-check-label {
         margin-bottom: 0;
         padding-right: 20px;
         font-size: $PublicSize;
     } 
 }
-.iconSize{
+.iconSize{ 
     font-size: $PublicSize;
 }
 

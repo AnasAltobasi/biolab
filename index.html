@@ -12,32 +12,38 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- FONTAWESOME CSS ICONS FILE-->
     <link rel="stylesheet" href="css/fontawesome.css" />
-    <!-- MINE  CSS  FILE-->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <link rel="stylesheet" href="./sass/style.css" />
+   <!-- MINE  CSS & SASS  FILE-->
+   <link rel="stylesheet" href="./sass/style.css" />
+   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <div class="container content ">
-        <div class="row">
-            <form>
-                <div class="form-row align-items-center mb-2">
-                    <div id="langChanger">
-                        <a href="#" id="EN">EN</a>|
-                        <a href="#" id="AR">AR</a>|
-                        <a href="home.html" lang="en" id="Loading">Login</a>
-                    </div>
-
+    <div class="header">
+        <div class="overlay">
+            <div class="container table">
+                <div class="navbar">
+                    <a href="index.html" lang="en" ><span class="logo">Bio Lab&nbsp;<span class="main-color">Task</span></span></a>
+                    <span class="links">
+                        <div class="align-items-center mb-2">
+                            <div id="langChanger">
+                                <a href="home.html" lang="en" id="Loading">Home</a>&nbsp;|
+                                <a href="" id="EN">EN</a>&nbsp; |
+                                <a href="" id="AR">AR</a>
+                            </div>
+                        </div>
+                    </span>
                 </div>
-                <div>
+            </div>
+        </div>
+    </div>
+    <div class="container content">
+            <form>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
                             <div class="input-group-text"><i class="fas fa-user"></i></div>
                         </div>
-                        <input type="text" lang="en" class="form-control" id="PatientName" placeholder="Full Patient Name">
+                        <input disabled type="text" lang="en" class="form-control" id="PatientName" value="Full Patient Name">
                     </div>
-                </div>
                 <div class="form-row align-items-center ">
                     <ul class="nav nav-tabs mb-2" role="tablist">
                         <!-- FIRST NAV LINK -->
@@ -65,15 +71,15 @@
                         <!-- CONTENT (BODY) FOR FIRST Tab  -->
                         <div class="tab-pane  active" id="tab1" role="tabpanel">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="PatientChackWhatsapp">
+                                <input class="form-check-input " type="checkbox" value="" id="PatientChackWhatsapp">
                                 <label class="form-check-label fontSize" for="flexCheckDefault" lang="en">
                                     Patient
                                 </label>
                             </div>
                             <div class=" input-group mb-2">
-                                <input type="text" class="form-control H-input" id="PatientInputWhatsapp">
+                                <input type="text" class="form-control  InputIndex" id="PatientInputWhatsapp">
                             </div>
-                            <div class="d-block mt-2 ">
+                            <div class="d-block mt-2 title">
                                 <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
                                 <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
                             </div>
@@ -85,9 +91,9 @@
                                 </label>
                             </div>
                             <div class=" input-group mb-2">
-                                <input type="text" class="form-control H-input" id="ConsultantInputWhatsapp">
+                                <input type="text" class="form-control InputIndex" id="ConsultantInputWhatsapp">
                             </div>
-                            <div class="d-block mt-2">
+                            <div class="d-block mt-2 title">
                                 <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
                                 <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
                             </div>
@@ -99,9 +105,9 @@
                                 </label>
                             </div>
                             <div class=" input-group mb-2">
-                                <input type="text" class="form-control H-input" id="ReferralInputWhatsapp">
+                                <input type="text" class="form-control InputIndex" id="ReferralInputWhatsapp">
                             </div>
-                            <div class="d-block mt-2">
+                            <div class="d-block mt-2 title">
                                 <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
                                 <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
                             </div>
@@ -113,10 +119,10 @@
                                 </label>
                             </div>
                             <div class=" input-group mb-2">
-                                <input type="text" class="form-control H-input" id="CorporateInputWhatsapp">
+                                <input type="text" class="form-control InputIndex" id="CorporateInputWhatsapp">
 
                             </div>
-                            <div class="d-block mt-2">
+                            <div class="d-block mt-2 title">
                                 <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
                                 <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
                             </div>
@@ -131,10 +137,10 @@
                                 </label>
                             </div>
                             <div class=" input-group mb-2">
-                                <input type="text" class="form-control H-input" id="PatientInputEmail" placeholder="">
+                                <input type="text" class="form-control InputIndex" id="PatientInputEmail" placeholder="">
 
                             </div>
-                            <div class="d-block mt-2">
+                            <div class="d-block mt-2 title">
                                 <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
                                 <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
                             </div>
@@ -146,11 +152,11 @@
                                 </label>
                             </div>
                             <div class=" input-group mb-2">
-                                <input type="text" class="form-control H-input" id="ConsultantInputEmail"
+                                <input type="text" class="form-control InputIndex" id="ConsultantInputEmail"
                                     placeholder="">
 
                             </div>
-                            <div class="d-block mt-2">
+                            <div class="d-block mt-2 title">
                                 <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
                                 <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
                             </div>
@@ -161,9 +167,9 @@
                                 </label>
                             </div>
                             <div class=" input-group mb-2">
-                                <input type="text" class="form-control H-input" id="ReferralInputEmail" placeholder="">
+                                <input type="text" class="form-control InputIndex" id="ReferralInputEmail" placeholder="">
                             </div>
-                            <div class="d-block mt-2">
+                            <div class="d-block mt-2 title">
                                 <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
                                 <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
                             </div>
@@ -174,9 +180,9 @@
                                 </label>
                             </div>
                             <div class=" input-group mb-2">
-                                <input type="text" class="form-control H-input" id="CorporateInputEmail" placeholder="">
+                                <input type="text" class="form-control InputIndex" id="CorporateInputEmail" placeholder="">
                             </div>
-                            <div class="d-block mt-2">
+                            <div class="d-block mt-2 title">
                                 <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
                                 <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
                             </div>
@@ -188,9 +194,9 @@
                                 </label>
                             </div>
                             <div class=" input-group mb-2">
-                                <input type="text" class="form-control H-input" id="TempinputEmail" placeholder="">
+                                <input type="text" class="form-control InputIndex" id="TempinputEmail" placeholder="">
                             </div>
-                            <div class="d-block mt-2">
+                            <div class="d-block mt-2 title">
                                 <i class="fas fa-paper-plane iconSize" style="color: #27AE60;"></i>
                                 <span lang="en">22/03/2020 02:30:04 By Ahmad Ali </span>
                             </div>
@@ -203,7 +209,6 @@
                     </div>
                 </div>
             </form>
-
         </div>
 
         <!-- JQuery FILE Calling -->

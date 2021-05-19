@@ -141,7 +141,8 @@
 		"title",
 		"alt",
 		"placeholder",
-		"href"
+		"href",
+		"value"
 	];
 	
 	/**

@@ -1,16 +1,14 @@
 var lang = new Lang();
-
-lang.dynamic('en', './js/Languages/js/langpack/en.json');
-lang.dynamic('ar', './js/Languages/js/langpack/ar.json');
+lang.dynamic('en','./js/Languages/js/langpack/en.json');
+  lang.dynamic('ar','./js/Languages/js/langpack/ar.json');
+  lang.init({
+    defaultLang: 'en'
+  });
 
 
 $(function () {
-  
-lang.init({
-  defaultLang: 'en'
-});
   // Mack All Input Disable
-  const AllInput = $(":text");
+  const AllInput = $(".InputIndex");
   const AllCheckBox = $(":checkbox");
   const AllInputArray = [];
   const AllCheckArray = [];
@@ -88,48 +86,47 @@ lang.init({
   // ***********************************************************************************
   const RTL = document.getElementById("AR");
   const LTR = document.getElementById("EN");
-  const Loading =document.getElementById("Loading");
-
+  const Loading = document.getElementById("Loading");
+  
   const Body = document.getElementsByTagName("body");
   const LANG = document.getElementsByTagName("body")[0];
 
+  
   $(RTL).click(function () {
+    window.lang.change('ar'); 
     $(Body).css("direction", "rtl");
     LANG.lang = "ar";
-    window.lang.change('ar');return false;
-    
-  });
+    return false;
 
+  });
+ 
   $(LTR).click(function () {
+    window.lang.change('en'); 
     $(Body).css("direction", "ltr");
     LANG.lang = "en";
-    window.lang.change('en');return false;
-  });
-
-
-
-  $(Loading).on("click",Loading,function(e){ 
-    e.preventDefault(); // cancel click
-    var url=$(Loading).attr("href");
-    $(Body).load(url);
-    
+    return false;
   });
 
   
 
+  // $(Loading).on("click", Loading, function (e) {
+  //   e.preventDefault(); // cancel click
+  //   var url = $($(this)).attr("href");
+  //   $(Body).load(url);
+  // });
 
 });
 
 
 
 
-function load(){
-  $.ajax({
-          success: function() {
-            location.reload();
-          }
-      });
-}
-  
+// function load() {
+//   $.ajax({
+//     success: function () {
+//       location.reload();
+//     }
+//   });
+// }
+
 
 

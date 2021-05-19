@@ -14,9 +14,10 @@
 		"Email address":"عنوان البريد الألكتروني",
 		"We'll never share your email with anyone else.":"لن يتم مشاركة البريد الألكتروني مع احد اخر",
 		"Password":"كلمة المرور",
-		"Check me":"أنقر علي",
+		"Check me":"أنقر هنا",
 		"Submit":"تأكيد",
 		"Login":"تسجيل الدخول",
-		"Home":"الرئيسية"
+		"Home":"الرئيسية",
+		"Welcome":"مرحبا بك!"
 	}
 }
