@@ -10,7 +10,13 @@
 		"Referral":"الإحالة",
 		"Corporate":"شركة كبرى",
 		"Temp":"درجة حرارة",
-		"Print Section":"قسم الطباعة"
-
+		"Print Section":"قسم الطباعة",
+		"Email address":"عنوان البريد الألكتروني",
+		"We'll never share your email with anyone else.":"لن يتم مشاركة البريد الألكتروني مع احد اخر",
+		"Password":"كلمة المرور",
+		"Check me":"أنقر علي",
+		"Submit":"تأكيد",
+		"Login":"تسجيل الدخول",
+		"Home":"الرئيسية"
 	}
 }

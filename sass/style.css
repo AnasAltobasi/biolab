@@ -1,39 +1,29 @@
 body {
-    text-align: unset;
-    direction: ltr;
+  text-align: unset;
+  direction: ltr;
 }
-
 .form-check .form-check-label {
-    margin-bottom: 0;
-    padding-right: 20px;
-    font-size: 18px;
+  margin-bottom: 0;
+  padding-right: 20px;
+  font-size: 18px;
 }
-
-.nav {
-    padding: 0;
-}
-.input-group-text{
-    border-radius: unset;
-}
-
 
 .iconSize {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 @supports (zoom: 2) {
-    input[type=checkbox] {
-        zoom: 1.5;
-        margin-top: unset;
-        margin-left: -0.8rem;
-        margin-top: 3px;
-    }
+  input[type=checkbox] {
+    zoom: 1.5;
+    margin-top: unset;
+    margin-left: -0.8rem;
+    margin-top: 3px;
+  }
 }
-
 @supports not (zoom: 2) {
-    input[type=checkbox] {
-        transform: scale(2);
-    }
+  input[type=checkbox] {
+    transform: scale(2);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

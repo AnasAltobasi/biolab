@@ -16,9 +16,8 @@ body {
   margin: 0;
   padding: 0;
 }
-.nav-link {
-    display: block;
-    padding: 0.1rem 0.5em;
+.nav-tabs {
+    padding-right: 0;
 }
 .form-row {
     display: -ms-flexbox;

@@ -78,29 +78,50 @@ $(function () {
   // ***********************************************************************************
   const RTL = document.getElementById("AR");
   const LTR = document.getElementById("EN");
-
-  const DIR = document.getElementsByTagName("body");
+  const Loading =document.getElementById("Loading");
+  const Body = document.getElementsByTagName("body");
   const LANG = document.getElementsByTagName("body")[0];
 
   $(RTL).click(function () {
-    $(DIR).css("direction", "rtl");
+    $(Body).css("direction", "rtl");
     LANG.lang = "ar";
     $("#PatientName").attr("value","إسم المريض الكامل");
+    window.lang.change('ar');
+    return false;
+    
   });
 
   $(LTR).click(function () {
-    $(DIR).css("direction", "ltr");
+    $(Body).css("direction", "ltr");
     LANG.lang = "en";
     $("#PatientName").attr("value","Full Patient Name");
+    window.lang.change('en');
+    return false;
   });
 
 
-  
+  $(Loading).on("click",Loading,function(e){ 
+    e.preventDefault(); // cancel click
+    var url=$((this)).attr("href");
+    $(Body).load(url);
+    
+  });
 });
+
 var lang = new Lang();
 lang.dynamic('en', './js/Languages/js/langpack/en.json');
 lang.dynamic('ar', './js/Languages/js/langpack/ar.json');
-
 lang.init({
   defaultLang: 'en'
 });
+
+function load(){
+  $.ajax({
+          success: function() {
+            location.reload();
+          }
+      });
+}
+  
+
+

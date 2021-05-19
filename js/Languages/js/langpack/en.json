@@ -1,5 +1,22 @@
 {
 	"token": {
-		
+		"Patient": "Patient",
+		"WhatsApp":"WhatsApp",
+		"Full Patient Name":"Full Patient Name",
+		"Email":"Email",
+		"Print":"Print",
+		"22/03/2020 02:30:04 By Ahmad Ali":"22/03/2020 02:30:04 By Ahmad Ali",
+		"Consultant":"Consultant",
+		"Referral":"Referral",
+		"Corporate":"Corporate",
+		"Temp":"Temp",
+		"Print Section":"Print Section",
+		"Email address":"Email address",
+		"We'll never share your email with anyone else.":"We'll never share your email with anyone else.",
+		"Password":"Password",
+		"Check me":"Check me",
+		"Submit":"Submit",
+		"Login":"Login",
+		"Home":"Home"
 	}
 }
