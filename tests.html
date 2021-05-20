@@ -73,8 +73,8 @@
                     </div>
                 </div>
                 <div class="input-group mb-3">
-                    <input style="border-radius: 4px;" type="text" lang="en" class="form-control " id="PatientName"
-                        value="Test Code or name">
+                    <input style="border-radius: 4px;" type="text" lang="en" class="form-control " id="InputSearch"
+                        placeholder="Test Code or name">
                     <button type="button" class="btn btn-primary"><i class="fas fa-search"></i></button>
                 </div>
                 <div class="row mb-lg-4 ">
@@ -93,82 +93,16 @@
                         </div>
                     </div>
                 </div>
-                <table class="table table-bordered">
+                <table class="table table-striped">
                     <thead>
                         <tr style="background-color: skyblue;">
-                            <th scope="col">Code</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Price</th>
+                            <th scope="col" data-colname="Code" data-order="desc">Code</th>
+                            <th scope="col" data-colname="Name" data-order="desc">Name</th>
+                            <th scope="col" data-colname="Price" data-order="desc">Price</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                        </tr>
-                        <tr>
-                            <td scope="row" colspan="3">
-                                <div class="form-group ">
-                                    <label class="labelViewVisit FontSize mr-5">Type</label>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn bg-primary dropdown-toggle" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            Urine
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Separated link</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group ">
-                                    <label class="labelViewVisit FontSize mr-5">Sens</label>
-                                    <div class="btn-group ">
-                                        <button type="button" class="btn bg-primary dropdown-toggle" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            Sensitivity 
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Separated link</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            
-                        </tr>
-                        <tr>
-                            <th scope="row" style="background-color: #FFA455;">3</th>
-                            <td >Jacob gdsgfdg</td>
-                            <td>Thornton fsdfg</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" style="background-color: #FFA455;">4</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" style="background-color: #FDFFA4;">5</th>
-                            <td>Jacob gdffd</td>
-                            <td>Thornton dgdfgfd</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" style="background-color: #FDFFA4;">5</th>
-                            <td>Jacob gdffd</td>
-                            <td>Thornton dgdfgfd</td>
-                        </tr>
+                    <tbody id="myTable">
+                        
                     </tbody>
                 </table>
 
