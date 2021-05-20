@@ -41,29 +41,17 @@ label{
     display: flex;
 }
 
-// .tab-pane {
-//     .title {
-//         float: $floatLeft;
-//         direction: $direction;
-//     }
-
-    // .form-check {
-    //     float: $floatLeft;
-    //     direction: $direction;
-    //     clear: both;
-
         .form-check-label {
             margin-bottom: 0;
             padding-right: 20px;
             font-size: $PublicSize;
         }
-    // }
 
     .iconSize {
         font-size: $PublicSize;
     }
 
-// }
+
 
 .form-group {
     .LabelInput {
@@ -190,7 +178,7 @@ section {
     .AdminLoginStyle {
         box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
         padding: 30px;
-        width: 60%;
+        width: 55%;
 
         input {
             border-radius: 15px;

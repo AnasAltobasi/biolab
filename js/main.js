@@ -97,36 +97,21 @@ $(function () {
   
   $(RTL).click(function () {
     $(Body).css("direction", "rtl");
+    document.cookie = "Dir=rtl";
     LANG.lang = "ar";
     window.lang.change('ar'); 
     return false;
-
   });
  
   $(LTR).click(function () {
     $(Body).css("direction", "ltr");
+    document.cookie = "Dir=ltr";
     LANG.lang = "en";
     window.lang.change('en'); 
     return false;
   });
-
-  // const Loading = document.getElementById("Loading");
-  // $(Loading).on("click", function (e) {
-  //   e.preventDefault(); // cancel click
-  //   var url = $($(this)).attr("href");
-  //   $(Body).load(url);
-  // });
-
 });
 
-
-function load() {
-  $.ajax({
-    success: function () {
-      location.reload();
-    }
-  });
-}
 
 
 

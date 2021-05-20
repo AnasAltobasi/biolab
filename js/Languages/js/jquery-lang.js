@@ -53,7 +53,9 @@
 		var self = this,
 			cookieLang,
 			defaultLang,
+			defaultDir,
 			currentLang,
+			currentDir,
 			allowCookieOverride;
 		
 		options = options || {};
@@ -61,10 +63,14 @@
 		
 		defaultLang = options.defaultLang;
 		currentLang = options.currentLang;
+		currentDir = options.currentDir;
+
 		allowCookieOverride = options.allowCookieOverride;
 		
 		// Set cookie settings
 		this.cookieName = options.cookie.name || "langCookie";
+		this.cookieNameDir = options.cookie.name || "Dir";
+
 		this.cookieExpiry = options.cookie.expiry || 365;
 		this.cookiePath = options.cookie.path || "/";
 		
@@ -101,13 +107,21 @@
 		
 		// Set default and current language to the default one
 		// to start with
+		
+		this.defaultDir = defaultDir || "ltr";
 		this.defaultLang = defaultLang || "en";
+		this.currentDir = defaultDir || "ltr";
 		this.currentLang = defaultLang || "en";
+		
 		
 		// Check for cookie support when no current language is specified
 		if ((allowCookieOverride || !currentLang) && typeof Cookies !== "undefined") {
 			// Check for an existing language cookie
 			cookieLang = Cookies.get(this.cookieName);
+
+			currentDir = Cookies.get(this.cookieNameDir);
+
+
 			
 			if (cookieLang) {
 				// We have a cookie language, set the current language
@@ -123,6 +137,8 @@
 			//if (currentLang && currentLang !== self.defaultLang) {
 				// Switch to the current language
 				self.change(currentLang);
+				const Body = document.getElementsByTagName("body");
+				$(Body).css("direction",currentDir );
 			//}
 		});
 	};

@@ -141,7 +141,7 @@ section .section-title p {
 .Admin .AdminLoginStyle {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
-  width: 60%;
+  width: 55%;
 }
 .Admin .AdminLoginStyle input {
   border-radius: 15px;
