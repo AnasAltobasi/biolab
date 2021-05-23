@@ -28,14 +28,46 @@ html body {
   padding: 0;
 }
 
-label {
-  display: flex;
+.input-group-text {
+  border-radius: 0;
 }
 
-.form-check-label {
-  margin-bottom: 0;
-  padding-right: 20px;
-  font-size: 15px;
+.overlay {
+  background: #018e9f;
+}
+
+#langChanger a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#langChanger a :hover {
+  text-decoration: underline #dedede;
+}
+
+.logo {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: unset !important;
+}
+
+.form-control {
+  border-radius: 15px;
+}
+.form-control:focus {
+  border-color: #018e9f;
+}
+
+.btn-primary, .btn-primary:disabled, .btn-primary:not(:disabled), .btn-primary:hover {
+  color: #fff;
+  background-color: #018e9f;
+  border-color: #018e9f;
 }
 
 @supports (zoom: 2) {

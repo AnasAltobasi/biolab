@@ -39,7 +39,7 @@ html {
     }
 }
 
-.card{
+.card {
     background-color: #dedede;
 }
 
@@ -47,15 +47,60 @@ html {
     padding: 0;
 }
 
-label {
-    display: flex;
+.input-group-text {
+    border-radius: 0;
 }
 
-.form-check-label {
-    margin-bottom: 0;
-    padding-right: 20px;
-    font-size: $PublicSize;
+.overlay {
+    background: #018e9f;
 }
+
+#langChanger a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#langChanger a :hover {
+    text-decoration: underline #dedede;
+}
+
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: unset !important;
+}
+.btn-primary{
+    @extend %Color;
+    &:disabled{
+        @extend %Color;
+    }
+    &:not(:disabled){
+        @extend %Color;
+    }
+    &:hover{
+        @extend %Color;
+    }
+}
+.form-control{
+    border-radius: 15px;
+    &:focus{
+        border-color: #018e9f;
+    }
+}
+
+%Color {
+    color: #fff;
+    background-color: #018e9f;
+    border-color: #018e9f;
+}
+
+
 @supports (zoom:2) {
     input[type=checkbox] {
         zoom: 1.5;

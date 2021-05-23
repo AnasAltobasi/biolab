@@ -17,16 +17,28 @@
 </head>
 
 <body>
-    <div class="text-center mb-2">
-        <div id="langChanger">
-            <a href="" id="EN">EN</a>&nbsp; |
-            <a href="" id="AR">AR</a>
+
+    <div class="header">
+        <div class="overlay">
+            <div class="container table">
+                <div class="navbar">
+                    <a href="index.html" lang="en"><span class="logo">BioLab&nbsp;
+                        <span class="main-color">Task</span></span></a>
+                    <span class="links">
+                        <div class="align-items-center mb-2">
+                            <div id="langChanger">
+                                <a href="" id="EN">EN</a>&nbsp; |
+                                <a href="" id="AR">AR</a>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
-
     <div class="container ">
         <div class="card">
-            <div class="card-header">
+            <div class="card-header text-center">
                 Featured
             </div>
             <div class="card-body">
@@ -44,7 +56,7 @@
                         </div>
                     </div>
                 </form>
-                <button type="button" class="btn btn-primary" lang="en" id="Enable">Enable</button>
+                <button type="button" class="btn btn-primary" id="Enable" lang="en">Disabled</button>
             </div>
         </div>
 
@@ -52,62 +64,62 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title" lang="en">Special title treatment</h5>
+                        <p class="card-text" lang="en">With supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <a href="#" class="btn btn-primary" lang="en">Go somewhere</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="card" style="background: #fff;">
                     <div class="card-body">
-                            <form disabled>
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="fas fa-user"></i></div>
-                                    </div>
-                                    <input style="border-radius: 0;" type="text" lang="en" class="form-control" id="Name" value="Your Name">
-                                </div>
-                                <div class="align-items-center">
-                                    <ul class="nav nav-tabs mb-2" role="tablist">
-                                        <!-- FIRST NAV LINK -->
-                                        <li class="nav-item Item1">
-                                            <a class="nav-link active text-center" data-toggle="tab" href="#tab1" role="tab">
-                                                <p class="color" lang="en">Home</p>
-                                            </a>
-                                        </li>
-                                        <!-- SECOND NAV LINK -->
-                                        <li class="nav-item Item2">
-                                            <a class="nav-link text-center" data-toggle="tab" href="#tab2" role="tab">
-                                                <p class="color" lang="en">About us</p>
-                                            </a>
-                                        </li>
-                                        <!-- THIRD NAV LINK -->
-                                        <li class="nav-item Item3">
-                                            <a class="nav-link text-center" data-toggle="tab" href="#tab3" role="tab">
-                                                <p class="color" lang="en">Contact us</p>
-                                            </a>
-                                        </li>
-                                    </ul>
-                    
-                                    <!-- Tab panes-->
-                                    <div class="tab-content">
-                                        <!-- CONTENT (BODY) FOR FIRST Tab  -->
-                                        <div class="tab-pane active" id="tab1" role="tabpanel">
-                                            <p lang="en">Home Section</p>
-                                        </div>
-                    
-                                        <!-- CONTENT (BODY) FOR second Tab  -->
-                                        <div class="tab-pane" id="tab2" role="tabpanel">
-                                            <p lang="en">About Section</p>
+                        <div class="input-group mb-2 ">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fas fa-user"></i></div>
+                            </div>
+                            <input style="border-radius: 0;" type="text" lang="en" class="form-control col-8" id="Name"
+                                placeholder="Your Name">
+                        </div>
+                        <div class="align-items-center">
+                            <ul class="nav nav-tabs mb-2" role="tablist">
+                                <!-- FIRST NAV LINK -->
+                                <li class="nav-item Item1">
+                                    <a class="nav-link active text-center" data-toggle="tab" href="#tab1" role="tab">
+                                        <p class="color" lang="en">Home</p>
+                                    </a>
+                                </li>
+                                <!-- SECOND NAV LINK -->
+                                <li class="nav-item Item2">
+                                    <a class="nav-link text-center" data-toggle="tab" href="#tab2" role="tab">
+                                        <p class="color" lang="en">About us</p>
+                                    </a>
+                                </li>
+                                <!-- THIRD NAV LINK -->
+                                <li class="nav-item Item3">
+                                    <a class="nav-link text-center" data-toggle="tab" href="#tab3" role="tab">
+                                        <p class="color" lang="en">Contact us</p>
+                                    </a>
+                                </li>
+                            </ul>
 
-                                        </div>
-                                        <!-- CONTENT (BODY) FOR Last Tab  -->
-                                        <div class="tab-pane" id="tab3" role="tabpanel">
-                                            <p lang="en">Contact Section</p>
-                                        </div>
-                                    </div>
-                            </form>
+                            <!-- Tab panes-->
+                            <div class="tab-content">
+                                <!-- CONTENT (BODY) FOR FIRST Tab  -->
+                                <div class="tab-pane active" id="tab1" role="tabpanel">
+                                    <p lang="en">Home Section</p>
+                                </div>
+
+                                <!-- CONTENT (BODY) FOR second Tab  -->
+                                <div class="tab-pane" id="tab2" role="tabpanel">
+                                    <p lang="en">About Section</p>
+
+                                </div>
+                                <!-- CONTENT (BODY) FOR Last Tab  -->
+                                <div class="tab-pane" id="tab3" role="tabpanel">
+                                    <p lang="en">Contact Section</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

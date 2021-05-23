@@ -158,7 +158,8 @@
 		"alt",
 		"placeholder",
 		"href",
-		"value"
+		"value",
+		
 	];
 	
 	/**

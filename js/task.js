@@ -23,14 +23,22 @@ $(function () {
         // $(Section).css("display", "flex");
     });
 
+
     document.getElementById("TextInput").addEventListener("keyup", function () {
         var nameInput = document.getElementById('TextInput').value;
+
         if (nameInput != "") {
             document.getElementById('Enable').removeAttribute("disabled");
+            document.getElementById('Enable').innerText="Enabled";
+
+
         } else {
             document.getElementById('Enable').setAttribute("disabled", "disabled");
+            document.getElementById('Enable').innerText="Disabled";
+
             $(Section).css("display", "none");
         }
+
 
     });
 
