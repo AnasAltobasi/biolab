@@ -1,0 +1,72 @@
+$direction : ltr;
+$floatLeft : left;
+$floatRight : right;
+$PublicSize : 15px;
+$ZeroSize:0px;
+$MainColor: #018e9f;
+$DarkColor: #b2b2b2;
+
+@if $direction==ltr {
+    $floatLeft: left;
+    $floatRight: right;
+}
+
+@else if $direction==rtl {
+    $floatLeft: right;
+    $floatRight: left;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+
+    body {
+        margin: $ZeroSize;
+        padding: $ZeroSize;
+        text-align: unset;
+        direction: $direction;
+    }
+}
+
+.card{
+    background-color: #dedede;
+}
+
+.nav {
+    padding: 0;
+}
+
+label {
+    display: flex;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+    padding-right: 20px;
+    font-size: $PublicSize;
+}
+@supports (zoom:2) {
+    input[type=checkbox] {
+        zoom: 1.5;
+        margin-top: unset;
+        margin-left: -0.8rem;
+        margin-top: 3px
+    }
+}
+
+@supports not (zoom:2) {
+    input[type=checkbox] {
+        transform: scale(2);
+    }
+}
