@@ -59,20 +59,6 @@ html #Backimg {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-#panel #tootlbar_colors .color {
-  width: 45px;
-  height: 45px;
-  position: relative;
-  float: left;
-  margin: 10px;
-  cursor: pointer;
-  border-radius: 3px;
-  border: 3px solid transparent;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
-  text-align: center;
-}
 #panel .open {
   display: block;
   width: 42px;
@@ -363,9 +349,6 @@ form button[type=submit] {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
-}
-#langChanger a :hover {
-  text-decoration: underline #dedede;
 }
 
 @supports (zoom: 2) {
