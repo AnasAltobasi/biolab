@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="609832204854-r0ctqj8ce5lfkqpp02hq4o6o733c3la7.apps.googleusercontent.com">
+
     <title>Tests</title>
     <!-- BOOTSTRAP CSS FILE -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -14,6 +16,7 @@
     <link rel="stylesheet" href="css/fontawesome.css" />
     <!-- MINE  CSS & SASS  FILE-->
     <link rel="stylesheet" href="./sass/task.css" />
+    
 </head>
 
 <body>
@@ -22,7 +25,7 @@
         <div class="overlay">
             <div class="container table">
                 <div class="navbar">
-                    <a href="index.html" lang="en"><span class="logo">BioLab&nbsp;
+                    <a href="task.html" lang="en"><span class="logo">BioLab&nbsp;
                         <span class="main-color">Task</span></span></a>
                     <span class="links">
                         <div class="align-items-center mb-2">
@@ -36,69 +39,54 @@
             </div>
         </div>
     </div>
-    <div class="container ">
-        <div class="card">
-            <div class="card-header text-center">
-                Featured
+    <div class="container">
+        <div class="card mb-3">
+            <div class="card-header text-center" lang="en">
+                About us
             </div>
             <div class="card-body">
                 <h5 class="card-title" lang="en">
-                    Special title treatment
+                   Biolab
                 </h5>
                 <p class="card-text" lang="en">
-                    With supporting text below as a natural lead-in to additional content.
+                    Biolab offers health awareness programs to assist patients in early diagnosis, as well as comprehensive check-ups to identify potential medical issues and monitor progress in the post-treatment phase.
                 </p>
                 <form>
                     <div class="row">
                         <div class="col-lg-4 col-md-8 mb-3">
                             <input type="text" autocomplete="off" lang="en" class="form-control"
-                                placeholder="Enter any Text" id="TextInput">
+                                placeholder="Enter any text" id="TextInput">
                         </div>
                     </div>
                 </form>
-                <button type="button" class="btn btn-primary" id="Enable" lang="en">Disabled</button>
+                <button type="button" class="btn btn-primary" id="Enable" lang="en">Go</button>
             </div>
         </div>
 
-        <div class="row mt-3" id="Section">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title" lang="en">Special title treatment</h5>
-                        <p class="card-text" lang="en">With supporting text below as a natural lead-in to additional
-                            content.</p>
-                        <a href="#" class="btn btn-primary" lang="en">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card" style="background: #fff;">
-                    <div class="card-body">
-                        <div class="input-group mb-2 ">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fas fa-user"></i></div>
-                            </div>
-                            <input style="border-radius: 0;" type="text" lang="en" class="form-control col-md-8 col-lg-8" id="Name"
-                                placeholder="Your Name">
-                        </div>
+        <div class="row" id="Section">
+            <div class="col-lg-6 col-md-6 mt-2">
+                <div class="TapsCard" style="background: #fff;">
                         <div class="align-items-center">
                             <ul class="nav nav-tabs mb-2" role="tablist">
                                 <!-- FIRST NAV LINK -->
                                 <li class="nav-item Item1">
                                     <a class="nav-link active text-center" data-toggle="tab" href="#tab1" role="tab">
-                                        <p class="color" lang="en">Home</p>
+                                        <p class="color" lang="en">Login</p>
+                                        <span  class="icon" ><i class="fas fa-sign-in-alt"></i></span>
                                     </a>
                                 </li>
                                 <!-- SECOND NAV LINK -->
                                 <li class="nav-item Item2">
                                     <a class="nav-link text-center" data-toggle="tab" href="#tab2" role="tab">
                                         <p class="color" lang="en">About us</p>
+                                        <span  class="icon"><i class="fas fa-info"></i></span>
                                     </a>
                                 </li>
                                 <!-- THIRD NAV LINK -->
                                 <li class="nav-item Item3">
                                     <a class="nav-link text-center" data-toggle="tab" href="#tab3" role="tab">
                                         <p class="color" lang="en">Contact</p>
+                                        <span class="icon"><i class="fas fa-phone-alt" ></i></span>
                                     </a>
                                 </li>
                             </ul>
@@ -107,24 +95,41 @@
                             <div class="tab-content">
                                 <!-- CONTENT (BODY) FOR FIRST Tab  -->
                                 <div class="tab-pane active" id="tab1" role="tabpanel">
-                                    <p lang="en">Home Section</p>
+                                    <hr class="Separator">
+                                    <p lang="en">Login Via Google Account</p>
+                                    <div class="g-signin2 google" data-onsuccess="onSignIn"></div>
+                                    <hr class="Separator">
                                 </div>
-
                                 <!-- CONTENT (BODY) FOR second Tab  -->
                                 <div class="tab-pane" id="tab2" role="tabpanel">
+                                    
+                                    <hr class="Separator">
                                     <p lang="en">About Section</p>
-
+                                    <hr class="Separator">
                                 </div>
                                 <!-- CONTENT (BODY) FOR Last Tab  -->
                                 <div class="tab-pane" id="tab3" role="tabpanel">
+                                    
+                                    <hr class="Separator">
                                     <p lang="en">Contact Section</p>
+                                    <hr class="Separator">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            <div class="col-sm-12 col-md-6  mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2" lang="en">Biolab House Call Service</h5>
+                        <video width="100%" height="240" controls autoplay muted>
+                            <source src="./videos/Biolab House Call Service بيولاب عندك.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                          </video>
+                        <a href="http://biolab.jo" class="btn btn-primary mt-2" lang="en">Visit us</a>
+                    </div>
+                </div>
             </div>
-
         </div>
     </div>
     <!-- JQuery FILE Calling -->
@@ -140,6 +145,11 @@
     <script src="./js/Languages/js/jquery-lang.js"></script>
     <!-- MINE JS FILE-->
     <script src="./js/task.js"></script>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+
 </body>
 
 </html>

@@ -15,33 +15,10 @@ const Enable = document.getElementById("Enable");
 
 
 $(function () {
-    $(Section).css("display", "none");
-    $(Enable).attr("disabled", "disabled");
 
-    $(Enable).click(function () {
-        $(Section).toggle()
-        // $(Section).css("display", "flex");
-    });
-
-
-    document.getElementById("TextInput").addEventListener("keyup", function () {
-        var nameInput = document.getElementById('TextInput').value;
-
-        if (nameInput != "") {
-            document.getElementById('Enable').removeAttribute("disabled");
-            document.getElementById('Enable').innerText="Enabled";
-
-
-        } else {
-            document.getElementById('Enable').setAttribute("disabled", "disabled");
-            document.getElementById('Enable').innerText="Disabled";
-
-            $(Section).css("display", "none");
-        }
-
-
-    });
-
+        $(Section).css("display", "none");
+        $(Enable).attr("disabled", "disabled");
+   
     $(RTL).click(function () {
         $(Body).css("direction", "rtl");
         document.cookie = "Dir=rtl";
@@ -57,4 +34,31 @@ $(function () {
         window.lang.change('en');
         return false;
     });
+
+    $(Enable).click(function () {
+        // $(Section).toggle()
+        $(Section).css("display", "flex");
+        document.getElementById('Enable').setAttribute("disabled", "disabled");
+    });
+
+    document.getElementById("TextInput").addEventListener("keyup", function () {
+        var nameInput = document.getElementById('TextInput').value;
+        if (nameInput != "") {
+            document.getElementById('Enable').removeAttribute("disabled");
+        } else {
+            document.getElementById('Enable').setAttribute("disabled", "disabled");
+            $(Section).css("display", "none");
+        }
+    });
 });
+
+
+
+
+function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  }

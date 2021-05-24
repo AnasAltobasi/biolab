@@ -16,6 +16,7 @@ $DarkColor: #b2b2b2;
     $floatRight: left;
 }
 
+
 *,
 *::before,
 *::after {
@@ -75,22 +76,44 @@ html {
 a {
     text-decoration: unset !important;
 }
-.btn-primary{
+
+.btn-primary {
     @extend %Color;
-    &:disabled{
+
+    &:disabled {
         @extend %Color;
     }
-    &:not(:disabled){
+
+    &:not(:disabled) {
         @extend %Color;
     }
-    &:hover{
+
+    &:hover {
         @extend %Color;
     }
 }
-.form-control{
+
+.form-control {
     border-radius: 15px;
-    &:focus{
+
+    &:focus {
         border-color: #018e9f;
+    }
+}
+
+.google {
+    display: flex;
+    justify-content: center;
+    color: white;
+
+    &:hover {
+        color: white;
+    }
+
+    &:focus {
+        border: 0;
+        border-color: unset;
+        box-shadow: unset;
     }
 }
 
@@ -115,3 +138,90 @@ a {
         transform: scale(2);
     }
 }
+
+.nav-link {
+    .icon {
+        display: none;
+    }
+
+    .color {
+        font-size: 16px;
+    }
+
+    
+}
+
+.tab-pane{
+    display: none;
+    /* CLOSE ICONS  */
+    .Separator {
+      display: inline-block;
+      height: 1px;
+      background-color: #018e9f;
+      display: block;
+      }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    .form-check-label {
+        font-size: 15px;
+    }
+    input[type=checkbox] {
+        zoom: 1.3 !important;
+        margin-top: unset;
+        margin-left: -0.8rem;
+        margin-top: 3px
+    }
+    .nav {
+        justify-content: center;
+    
+    .nav-link {
+         margin-right: 15px;
+        .icon {
+            display: contents;
+            font-size: 25px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .color {
+            display: none;
+        }
+    }
+}
+    // .tab-pane{
+    //     z-index: 1000;
+    //     position: fixed;
+    //     left: 0;
+    //     top: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     overflow-y: auto;
+    //     background: #dedede;
+    //     -webkit-transition: all 0.4s ease;
+    //     -moz-transition: all 0.4s ease;
+    //     -o-transition: all 0.4s ease;
+    //     transition: all 0.4s ease;
+    //     padding: 20px;
+
+    //     .Separator {
+    //         height: 1px;
+    //         background-color: #495057;
+    //         display: block;
+    //       }
+    //     .Back {
+    //         display: block;
+            
+    //     }
+
+    // }
+}
+
+
+
+    
+

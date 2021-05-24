@@ -21,6 +21,15 @@
 		"About us":"من نحن",
 		"Contact":"التواصل ",
 		"Your Name":"إسمك",
-		"Welcome":"مرحبا بك!"
+		"Welcome":"مرحبا بك!",
+		"Biolab offers health awareness programs to assist patients in early diagnosis, as well as comprehensive check-ups to identify potential medical issues and monitor progress in the post-treatment phase.":"يقدم Biolab برامج توعية صحية لمساعدة المرضى في التشخيص المبكر ، بالإضافة إلى الفحوصات الشاملة لتحديد المشكلات الطبية المحتملة ومراقبة التقدم في مرحلة ما بعد العلاج.",
+		"Biolab":"مختبر بيولاب الطبي",
+		"Enter any text":"أدخل نص",
+		"Disabled":"معطل",
+		"Login Via Google Account":"تسجيل الدخول من خلال جوجل",
+		"Biolab House Call Service":"خدمة الاتصال المنزلي بيولاب",
+		"Visit us":"قم بزيارتنا",
+		"Go":"إذهب",
+		"BACK ":"الرجوع"
 	}
 }
