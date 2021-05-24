@@ -26,6 +26,69 @@ html body {
   direction: ltr;
 }
 
+#panel {
+  position: fixed;
+  top: 175px;
+  z-index: 9999;
+}
+#panel .open span {
+  height: 50px;
+  width: 55px;
+  text-align: center;
+  display: block;
+  position: relative;
+  background-color: #018e9f;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 30px;
+}
+#panel #panel-admin {
+  width: 100%;
+  background: #018e9f;
+  color: #fff;
+  z-index: 9999;
+  position: relative;
+  padding: 15px;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-height: 160px;
+  -moz-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+#panel #tootlbar_colors .color {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 3px solid transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+}
+#panel .open {
+  display: block;
+  width: 42px;
+  border-radius: 0 3px 3px 0;
+  height: 42px;
+  float: right;
+  font-size: 22px;
+  top: 60px;
+  z-index: 1000;
+  position: absolute;
+}
+#panel .open span i {
+  line-height: 42px;
+  color: #ffffff;
+  font-size: 22px;
+}
+
 .overlay {
   background: #018e9f;
 }

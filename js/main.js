@@ -8,6 +8,15 @@ lang.init({
 
 
 $(function () {
+
+  $("#panel-admin").css("display", "none");
+  $('.open').click(function() {
+      $("#panel-admin").animate({ width: 'toggle' }, 100);
+  });
+
+  
+
+
   // Mack All Input Disable
   const AllInput = $(".InputIndex");
   const AllCheckBox = $(":checkbox");
@@ -106,6 +115,7 @@ $(function () {
     document.cookie = "Dir=rtl";
     LANG.lang = "ar";
     window.lang.change('ar');
+    $("#panel-admin").css("display", "none");
     return false;
   });
 
@@ -114,6 +124,7 @@ $(function () {
     document.cookie = "Dir=ltr";
     LANG.lang = "en";
     window.lang.change('en');
+    $("#panel-admin").css("display", "none");
     return false;
   });
 
