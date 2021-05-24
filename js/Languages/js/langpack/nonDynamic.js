@@ -1,6 +1,5 @@
 Lang.prototype.pack.th = {
 	"token": {
-		"Patient" :"المريض"
 	},
 	"regex": [
 		[/Budget/, "งบประมาณ"],

@@ -118,24 +118,21 @@ $(function () {
   });
 
 
-$(Enable).click(function () {
+  $(Enable).click(function () {
     // $(Section).toggle()
     $(Section).css("display", "flex");
     document.getElementById('Enable').setAttribute("disabled", "disabled");
-});
+  });
 
-document.getElementById("TextInput").addEventListener("keyup", function () {
+  document.getElementById("TextInput").addEventListener("keyup", function () {
     var nameInput = document.getElementById('TextInput').value;
     if (nameInput != "") {
-        document.getElementById('Enable').removeAttribute("disabled");
+      document.getElementById('Enable').removeAttribute("disabled");
     } else {
-        document.getElementById('Enable').setAttribute("disabled", "disabled");
-        $(Section).css("display", "none");
+      document.getElementById('Enable').setAttribute("disabled", "disabled");
+      $(Section).css("display", "none");
     }
-});
-
-
-
+  });
 });
 
 function onSignIn(googleUser) {
