@@ -1,3 +1,9 @@
+.bg-primary:active, .bg-primary:hover, .bg-primary, .btn-primary:hover, .btn-primary:not(:disabled), .btn-primary:disabled, .btn-primary, button.btn.bg-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #018e9f !important;
+  border-color: #018e9f !important;
+}
+
 *,
 *::before,
 *::after {
@@ -20,8 +26,51 @@ html body {
   direction: ltr;
 }
 
-label {
+.overlay {
+  background: #018e9f;
+}
+
+.card {
+  background-color: #dedede;
+}
+
+.logo {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: unset !important;
+}
+
+.NextBtn {
+  width: 10rem;
+}
+
+.LabelInput {
+  display: flex !important;
+}
+
+.form-control {
+  border-radius: 15px;
+}
+.form-control:focus {
+  border-color: #018e9f;
+}
+
+.google {
   display: flex;
+  justify-content: center;
+  color: white;
+}
+.google:hover {
+  color: white;
+}
+.google:focus {
+  border: 0;
+  border-color: unset;
+  box-shadow: unset;
 }
 
 .form-check-label {
@@ -34,30 +83,25 @@ label {
   font-size: 18px;
 }
 
-.form-group .LabelInput {
-  display: flex;
-}
-
 .nav-tabs {
   padding-right: 0px;
 }
 .nav-tabs .nav-link {
   padding: 2px 15px 5px 15px;
 }
-
-.input-group-text {
-  border-radius: 0px;
+.nav-tabs .nav-link .icon {
+  display: none;
 }
-
-.color {
+.nav-tabs .nav-link .color {
   margin-top: 0px;
   margin-bottom: 0.3rem;
   color: blue;
   padding: 4px 7px 0px 7px;
+  font-size: 16px;
 }
 
-.clear {
-  clear: both;
+.input-group-text {
+  border-radius: 0px;
 }
 
 .content {
@@ -72,10 +116,12 @@ label {
 .nav {
   display: flex;
   flex-wrap: nowrap;
+  padding: 0;
 }
 
 .tab-pane {
   width: 100%;
+  display: none;
 }
 .tab-pane .InputIndex {
   border-radius: 15px;
@@ -85,6 +131,12 @@ label {
 }
 .tab-pane .title {
   margin-bottom: 10px;
+}
+.tab-pane .Separator {
+  display: inline-block;
+  height: 1px;
+  background-color: #018e9f;
+  display: block;
 }
 
 section {
@@ -114,6 +166,26 @@ section .section-title span {
 section .section-title p {
   margin-bottom: 0px;
   z-index: 2;
+}
+
+.IconGroups,
+.IconGroupsTow {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.IconGroups .form-group,
+.IconGroupsTow .form-group {
+  margin-bottom: 1rem;
+  padding: 0px 10px 5px 0px;
+}
+.IconGroups .FontSize,
+.IconGroupsTow .FontSize {
+  font-size: 18px;
+}
+
+button.btn.bg-primary.dropdown-toggle {
+  width: 17rem;
 }
 
 @media (max-width: 768px) {
@@ -152,6 +224,35 @@ section .section-title p {
   .section-title span {
     font-size: 38px;
   }
+
+  .nav {
+    justify-content: center;
+  }
+  .nav .nav-link {
+    margin-right: 15px;
+  }
+  .nav .nav-link .icon {
+    display: contents;
+    font-size: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .nav .nav-link .color {
+    display: none;
+  }
+
+  button.btn.bg-primary.dropdown-toggle {
+    width: 11rem !important;
+  }
+
+  .IconGroupsTow .form-group {
+    margin-bottom: 1rem;
+    padding: 0px 0px 5px 0px !important;
+  }
+
+  .FontSize {
+    font-size: 15px !important;
+  }
 }
 .Admin .AdminLoginStyle {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
@@ -178,10 +279,6 @@ form button[type=submit] {
   border-radius: 5px;
 }
 
-.overlay {
-  background: #018e9f;
-}
-
 #langChanger a {
   color: #fff;
   text-decoration: none;
@@ -190,16 +287,6 @@ form button[type=submit] {
 }
 #langChanger a :hover {
   text-decoration: underline #dedede;
-}
-
-.logo {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: unset !important;
 }
 
 @supports (zoom: 2) {

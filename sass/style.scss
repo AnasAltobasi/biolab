@@ -15,6 +15,12 @@ $MainColor: #018e9f;
     $floatRight: left;
 }
 
+%Color {
+    color: #fff;
+    background-color: #018e9f !important;
+    border-color: #018e9f !important;
+}
+
 *,
 *::before,
 *::after {
@@ -38,8 +44,54 @@ html {
     }
 }
 
-label {
+.overlay {
+    background: $MainColor;
+}
+
+.card {
+    background-color: #dedede;
+}
+
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: unset !important;
+}
+
+.NextBtn {
+    width: 10rem;
+}
+
+.LabelInput {
+    display: flex !important;
+}
+
+.form-control {
+    border-radius: 15px;
+
+    &:focus {
+        border-color: #018e9f;
+    }
+}
+
+.google {
     display: flex;
+    justify-content: center;
+    color: white;
+
+    &:hover {
+        color: white;
+    }
+
+    &:focus {
+        border: 0;
+        border-color: unset;
+        box-shadow: unset;
+    }
 }
 
 .form-check-label {
@@ -52,36 +104,34 @@ label {
     font-size: $PublicSize;
 }
 
-.form-group {
-    .LabelInput {
-        display: flex;
-    }
-}
 
 .nav-tabs {
     padding-right: $ZeroSize;
 
     .nav-link {
-
         padding: 2px 15px 5px 15px;
+
+        .icon {
+            display: none;
+        }
+
+        .color {
+            margin-top: $ZeroSize;
+            margin-bottom: 0.3rem;
+            color: blue;
+            padding: 4px 7px $ZeroSize 7px;
+            font-size: 16px;
+        }
 
     }
 }
+
+
 
 .input-group-text {
     border-radius: $ZeroSize;
 }
 
-.color {
-    margin-top: $ZeroSize;
-    margin-bottom: 0.3rem;
-    color: blue;
-    padding: 4px 7px $ZeroSize 7px;
-}
-
-.clear {
-    clear: both;
-}
 
 .content {
     margin: auto;
@@ -95,10 +145,12 @@ label {
 .nav {
     display: flex;
     flex-wrap: nowrap;
+    padding: 0;
 }
 
 .tab-pane {
     width: 100%;
+    display: none;
 
     .InputIndex {
         border-radius: 15px;
@@ -111,9 +163,14 @@ label {
     .title {
         margin-bottom: 10px;
     }
+
+    .Separator {
+        display: inline-block;
+        height: 1px;
+        background-color: #018e9f;
+        display: block;
+    }
 }
-
-
 
 
 section {
@@ -151,13 +208,39 @@ section {
 }
 
 
+.IconGroups,
+.IconGroupsTow {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    .form-group {
+        margin-bottom: 1rem;
+        padding: 0px 10px 5px 0px;
+
+
+    }
+
+    .FontSize {
+        font-size: $PublicSize;
+    }
+}
+
+
+button.btn.bg-primary.dropdown-toggle {
+    @extend %Color;
+    width: 17rem;
+}
+
+
+
+
 @media (max-width: 768px) {
     body {
         font-size: 15px;
     }
 
     .form-check-label {
-
         font-size: 15px;
     }
 
@@ -190,6 +273,38 @@ section {
         span {
             font-size: 38px;
         }
+    }
+
+    .nav {
+        justify-content: center;
+
+        .nav-link {
+            margin-right: 15px;
+
+            .icon {
+                display: contents;
+                font-size: 25px;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+
+            .color {
+                display: none;
+            }
+        }
+    }
+
+    button.btn.bg-primary.dropdown-toggle {
+        width: 11rem !important;
+    }
+
+    .IconGroupsTow .form-group {
+        margin-bottom: 1rem;
+        padding: 0px 0px 5px 0px !important;
+    }
+
+    .FontSize {
+        font-size: 15px !important;
     }
 }
 
@@ -224,9 +339,7 @@ form button[type="submit"] {
     border-radius: 5px;
 }
 
-.overlay {
-    background: $MainColor;
-}
+
 
 #langChanger a {
     color: #fff;
@@ -240,14 +353,34 @@ form button[type="submit"] {
 }
 
 
-.logo {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 18px;
+
+
+.btn-primary {
+    @extend %Color;
+
+    &:disabled {
+        @extend %Color;
+    }
+
+    &:not(:disabled) {
+        @extend %Color;
+    }
+
+    &:hover {
+        @extend %Color;
+    }
 }
 
-a {
-    text-decoration: unset !important;
+.bg-primary {
+    @extend %Color;
+
+    &:hover {
+        @extend %Color;
+    }
+
+    &:active {
+        @extend %Color;
+    }
 }
 
 @supports (zoom:2) {

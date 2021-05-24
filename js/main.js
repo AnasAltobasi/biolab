@@ -94,6 +94,12 @@ $(function () {
   const Body = document.getElementsByTagName("body");
   const LANG = document.getElementsByTagName("body")[0];
 
+  const Section = document.getElementById("Section");
+  const Enable = document.getElementById("Enable");
+
+  $(Section).css("display", "none");
+  $(Enable).attr("disabled", "disabled");
+
 
   $(RTL).click(function () {
     $(Body).css("direction", "rtl");
@@ -110,93 +116,38 @@ $(function () {
     window.lang.change('en');
     return false;
   });
+
+
+$(Enable).click(function () {
+    // $(Section).toggle()
+    $(Section).css("display", "flex");
+    document.getElementById('Enable').setAttribute("disabled", "disabled");
+});
+
+document.getElementById("TextInput").addEventListener("keyup", function () {
+    var nameInput = document.getElementById('TextInput').value;
+    if (nameInput != "") {
+        document.getElementById('Enable').removeAttribute("disabled");
+    } else {
+        document.getElementById('Enable').setAttribute("disabled", "disabled");
+        $(Section).css("display", "none");
+    }
 });
 
 
-// Filter Data Table For Tests Page
-// var myArray = [
-//   { "Code": "5HIA2", "Name": "safsdggdfdhgdsdsf", "Price": "4752" },
-//   { "Code": "sde4", "Name": "mhmu", "Price": "932" },
-//   { "Code": "nhjj8", "Name": "regrt", "Price": "782" },
-//   { "Code": "5HItrhA2", "Name": "qqw", "Price": "2786953" },
-//   { "Code": "5HIgrrtA2", "Name": "[olpoi", "Price": "983" },
-//   { "Code": "345346", "Name": "safsdggdfdhgdsdsf", "Price": "632" },
-//   { "Code": "fdgr", "Name": "dsfs", "Price": "89" },
-//   { "Code": "fdsgr", "Name": "mite", "Price": "5683" },
-//   { "Code": "hgfhgfh", "Name": "qwbn", "Price": "2553" }
-// ]
+
+});
+
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
 
 
-// $("#InputSearch").on('keyup', function () {
-//   var value = $(this).val();
-//   console.log("Value:", value);
-//   var data = searchTable(value, myArray);
-//   buildTable(data);
 
-
-// })
-
-// buildTable(myArray)
-
-// function searchTable(value, data) {
-//   var filteredData = [];
-
-//   for (var i = 0; i < data.length; i++) {
-//     value = value.toLowerCase()
-//     var Name = data[i].Name.toLowerCase();
-//     var Code = data[i].Code;
-
-
-//     if (Name.includes(value) || Code.includes(value)) {
-//       filteredData.push(data[i]);
-//     }
-//   }
-//   return filteredData;
-// }
-
-// $('th').on('click', function(){
-//    var column = $(this).data('colname')
-//    var order = $(this).data('order')
-//    var text = $(this).html()
-//    text = text.substring(0, text.length - 1);
-   
-   
-   
-//    if (order == 'desc'){
-//       myArray = myArray.sort((a, b) => a[column] > b[column] ? 1 : -1)
-//       $(this).data("order","asc");
-//       text += '&#9660'
-//    }else{
-//       myArray = myArray.sort((a, b) => a[column] < b[column] ? 1 : -1)
-//       $(this).data("order","desc");
-//       text += '&#9650'
-//    }
-
-//   $(this).html(text)
-
-//   buildTable(myArray)
-//   })
-
-
- 
-
-  
-// function buildTable(data){
-//   var table = document.getElementById('myTable')
-//   table.innerHTML = ''
-//   for (var i = 0; i < data.length; i++){
-//       var Code = `Code-${i}`
-//       var Name = `Name-${i}`
-//       var Price = `Price-${i}`
-
-//       var row = `<tr>
-//                       <td>${data[i].Code}</td>
-//                       <td>${data[i].Name}</td>
-//                       <td>${data[i].Price}</td>
-//                  </tr>`
-//       table.innerHTML += row
-//   }
-// }
 
 
 
