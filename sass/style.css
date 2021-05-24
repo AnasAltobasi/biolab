@@ -24,23 +24,24 @@ html body {
   padding: 0px;
   text-align: unset;
   direction: ltr;
+  background-image: url("../img/biolab.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  background-size: 20%;
+}
+html #Backimg {
+  background-image: url("../img/biolab.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  background-size: 14%;
 }
 
 #panel {
   position: fixed;
-  top: 175px;
+  top: 120px;
   z-index: 9999;
-}
-#panel .open span {
-  height: 50px;
-  width: 55px;
-  text-align: center;
-  display: block;
-  position: relative;
-  background-color: #018e9f;
-  color: #fff;
-  border-radius: 30px;
-  font-size: 30px;
 }
 #panel #panel-admin {
   width: 100%;
@@ -82,6 +83,17 @@ html body {
   top: 60px;
   z-index: 1000;
   position: absolute;
+}
+#panel .open span {
+  height: 50px;
+  width: 55px;
+  text-align: center;
+  display: block;
+  position: relative;
+  background-color: #018e9f;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 30px;
 }
 #panel .open span i {
   line-height: 42px;
@@ -249,9 +261,14 @@ button.btn.bg-primary.dropdown-toggle {
   width: 17rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   body {
     font-size: 15px;
+    background-image: unset !important;
+  }
+
+  #Backimg {
+    background-image: unset !important;
   }
 
   .form-check-label {

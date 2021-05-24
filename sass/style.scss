@@ -41,25 +41,29 @@ html {
         padding: $ZeroSize;
         text-align: unset;
         direction: $direction;
-        
+
+        background-image: url('../img/biolab.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: left;
+        background-size: 20%;
+    }
+
+    #Backimg {
+        background-image: url('../img/biolab.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: left;
+        background-size: 14%;
     }
 }
+
 #panel {
-	position: fixed;
-	top: 175px;
-	z-index: 9999;
-    .open span {
-        height: 50px;
-        width: 55px;
-        text-align: center;
-        display: block;
-        position: relative;
-        background-color: #018e9f;
-        color: #fff;
-        border-radius: 30px;
-        font-size: 30px;
-    }
-     #panel-admin {
+    position: fixed;
+    top: 120px;
+    z-index: 9999;
+
+    #panel-admin {
         // float: left;
         width: 100%;
         background: $MainColor;
@@ -76,21 +80,25 @@ html {
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
     }
-    #tootlbar_colors .color {
-        width: 45px;
-        height: 45px;
-        position: relative;
-        float: left;
-        margin: 10px;
-        cursor: pointer;
-        border-radius: 3px;
-        border: 3px solid transparent;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        position: relative;
-        text-align: center;
+
+    #tootlbar_colors {
+        .color {
+            width: 45px;
+            height: 45px;
+            position: relative;
+            float: left;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            border: 3px solid transparent;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            position: relative;
+            text-align: center;
+        }
     }
-     .open {
+
+    .open {
         display: block;
         width: 42px;
         border-radius: 0 3px 3px 0;
@@ -101,11 +109,26 @@ html {
         // right: -50px;
         z-index: 1000;
         position: absolute;
-    }
-    .open span i {
-        line-height: 42px;
-        color: #ffffff;
-        font-size: 22px;
+
+        span {
+            height: 50px;
+            width: 55px;
+            text-align: center;
+            display: block;
+            position: relative;
+            background-color: #018e9f;
+            color: #fff;
+            border-radius: 30px;
+            font-size: 30px;
+
+            i {
+                line-height: 42px;
+                color: #ffffff;
+                font-size: 22px;
+            }
+        }
+
+
     }
 }
 
@@ -235,6 +258,7 @@ a {
         padding-right: 20px;
         font-size: $PublicSize;
     }
+
     .iconSize {
         font-size: $PublicSize;
     }
@@ -301,9 +325,14 @@ button.btn.bg-primary.dropdown-toggle {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     body {
         font-size: 15px;
+        background-image: unset !important;
+    }
+
+    #Backimg {
+        background-image: unset !important;
     }
 
     .form-check-label {
@@ -352,7 +381,7 @@ button.btn.bg-primary.dropdown-toggle {
                 font-size: 25px;
                 padding-right: 10px;
                 padding-left: 10px;
-                color: #018e9f; 
+                color: #018e9f;
             }
 
             .color {

@@ -10,12 +10,15 @@ lang.init({
 $(function () {
 
   $("#panel-admin").css("display", "none");
+
   $('.open').click(function() {
       $("#panel-admin").animate({ width: 'toggle' }, 100);
   });
 
   
 
+
+  
 
   // Mack All Input Disable
   const AllInput = $(".InputIndex");
